@@ -71,7 +71,7 @@ export default {
   },
   created() {
     this.msg = this.$route.query.list;
-    this.pageUrl = baseUrl + "/web/marketing/#/productDetails?id=" + this.msg.id
+    this.pageUrl = baseUrl + "/web/marketing/#/productDetails?id=" + this.msg.id + '&musi=1'
   },
   watch: {
     imgUrl() {
@@ -85,8 +85,8 @@ export default {
     //生成二维码
     getCode() {
       let qrcode = new QRCode("qrcode", {
-        width: 48,
-        height: 48, // 高度
+        width: 52,
+        height: 52, // 高度
         text: this.pageUrl,
         colorDark: "#000",
         colorLight: "#fff",

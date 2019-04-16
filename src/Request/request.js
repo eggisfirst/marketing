@@ -4,7 +4,8 @@ import axios from 'axios'
 // let baseUrl = 'http://10.11.8.229'
 // let baseUrl = 'http://172.16.8.216'
 // let baseUrl = 'http://10.11.8.7'
-let baseUrl = 'https://10.12.0.117/consumer-admin'
+// let baseUrl = 'https://10.12.0.117/consumer-admin'
+let baseUrl = 'http://172.16.10.107:8088'
 export {baseUrl}
 class Request {
   getData ({ url, params, method = 'GET' }) {
